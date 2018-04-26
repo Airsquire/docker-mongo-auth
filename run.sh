@@ -8,6 +8,7 @@ if [ "$AUTH" == "yes" ]; then
     cmd="$cmd --auth"
 fi
 
+echo $cmd
 $cmd &
 
 if [ ! -f /data/db/.mongodb_password_set ]; then
